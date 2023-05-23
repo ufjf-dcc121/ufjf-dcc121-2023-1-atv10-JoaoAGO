@@ -8,26 +8,39 @@
     <title>Semana 10</title>
 </head>
 <body>
-    <h1>Semana 10</h1>
-    <h2>Scripts Externos</h2>
-    <section id="formulario">
-        <h1>Entrada</h1>
-        <form name="entrada">
-            <label for="valor">Valor:</label>
-            <input type="number" name="valor" id="valor" title="valor a ser inserido">
-            <input type="submit" value="Adicionar">
-        </form>
-    </section>
-    <section id="itens">
-        <h1>Itens</h1>
-        <ol>
-
-        
-        </ol>
-    </section>
+    <header>
+        <h1>Semana 10</h1>
+        <h2>Scripts Externos</h2>    
+    </header>
+    <main>
+        <section id="formulario">
+            <h1>Entrada</h1>
+            <form name="entrada">
+                <label for="valor">Valor:</label>
+                <input type="number" name="valor" id="valor" title="valor a ser inserido">
+                <input type="submit" value="Adicionar">
+            </form>
+        </section>
+        <section id="itens">
+            <h1>Itens</h1>
+            <ol>
+    
+            
+            </ol>
+        </section>
+    </main>
     
 </body>
 <footer>
-    <p>&copy; João Vitor - 2023</p>
+    <p>&copy; João Vitor Alves - 2023</p>
 </footer>
+<script>
+    const form = document.forms.entrada;
+    form.addEventListener('submit', envia);
+
+    function envia(evento){
+        evento.preventDefault();
+        console.log('Formulário enviado!')
+    }
+</script>
 </html>
